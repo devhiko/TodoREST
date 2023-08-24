@@ -5,4 +5,5 @@
 * Add DI to Program.cs + 
 * Scaffold Controller and rest +
 * Add migration to init db + 
-* Edit to add CORS layer
+* Add CORS layer +
+* Test functionality with Swagger +

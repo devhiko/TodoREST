@@ -3,6 +3,19 @@ using TodoREST.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5173")
+            .AllowAnyHeader()
+            //.AllowAnyOrigin() // for dev purposes
+            .AllowAnyMethod();
+        });
+});
+
 // Add services to the container.
 builder.Services.AddControllers();
 // injecting service to app
@@ -22,6 +35,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// to enable CORS
+app.UseCors();
 
 app.UseAuthorization();
 
