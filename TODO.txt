@@ -1,0 +1,8 @@
+* Add Model +
+* Add DB Context +
+* Add connect string to json + 
+* Add Postgres and EF +
+* Add DI to Program.cs + 
+* Scaffold Controller and rest +
+* Add migration to init db + 
+* Edit to add CORS layer
