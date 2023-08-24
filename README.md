@@ -1,1 +1,1 @@
-# TodoREST
+# A REST API to fetch Todos from DB with EF Core
